@@ -39,11 +39,26 @@ class readExcel():
         print('sheetData3',sheetData3)
 
 
-        # sheetData1[0].extend(sheetData2[0].extend(sheetData3[0]))
-        # print(sheetData1[0])
+        for i in sheetData3[0]:
+            sheetData2[0].append(i)
+        for i in sheetData2[0]:
+            sheetData1[0].append(i)
+        print(sheetData1[0])
 
 
-        sheetData2[0].extend(sheetData3[0])
+        for y in sheetData3[1]:
+            sheetData2[1].append(y)
+        for z in sheetData2[1]:
+            sheetData1[1].append(z)
+        print(sheetData1[1])
+
+
+        for y in sheetData3[2]:
+            sheetData2[2].append(y)
+        for z in sheetData2[2]:
+            sheetData1[1].append(z)
+        print(sheetData1[2])
+
 
 read = readExcel()
 read.getData()
