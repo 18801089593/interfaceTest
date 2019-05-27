@@ -36,15 +36,14 @@ class Mytest(unittest.TestCase):
 
 
 if __name__ =='__main__':
+
     #unittest.main()    #默认加载所有test开头的方法，如果想自定义运行的方法则需要通过手动添加的方式
 
     #手工添加：1.实例化测试套件类
     suite = unittest.TestSuite()
     #2.调用addTest方法
-    suite.addTest(Mytest.test_sum2)
-    #
+    suite.addTest(Mytest('test_sum1'))
     runner = unittest.TextTestRunner()
-
     runner.run(suite)
 
 
