@@ -19,8 +19,8 @@ class A():
                 print('请求成功')
             else:
                 print('请求失败')
-A().num()
 
+A().num()
 
 
 

@@ -59,7 +59,7 @@ class readExcel():
             singleList.append(expect)
             dataList.append((singleList))
             # print('----single',dataList)
-        print('----data', dataList)
+        print(dataList)
         return dataList
 
 read = readExcel()
