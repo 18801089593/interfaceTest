@@ -58,7 +58,8 @@ class readExcel():
             singleList.append(param)
             singleList.append(expect)
             dataList.append((singleList))
-            # print('----single',dataList)
+
+
         print(dataList)
         return dataList
 
