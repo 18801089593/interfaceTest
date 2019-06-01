@@ -18,7 +18,7 @@ class writeExcel(object):
             #根据id写入对应的实际结果和接口测试状态
             self.ws.write(id,2,real)
             self.ws.write(id,3,status)
-            self.wb.save('self.data_1.xls')
+            self.wb.save('D:\interfaceTest\testDate\.data_1.xls')
             return 'ok'
         except Exception as msg:
             print(msg)

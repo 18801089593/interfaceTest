@@ -15,7 +15,7 @@ class MyTestCase1(unittest.TestCase):
 
 
     @data(*testda)
-    #@unpack
+    @unpack
     def test_normal(self,id,url,method,param,expect):
         print(id,url,method,param,expect)
         print(type(eval(param)))

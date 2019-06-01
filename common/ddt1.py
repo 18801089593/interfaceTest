@@ -3,7 +3,7 @@ from ddt import  ddt,data,unpack
 
 @ddt
 class MyTestCase1(unittest.TestCase):
-    @data(2)
+    @data(1)
     def test_normal1(self,value):
         print(value)
         self.assertEqual(value,2)
