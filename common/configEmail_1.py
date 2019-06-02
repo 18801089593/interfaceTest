@@ -8,7 +8,7 @@
 '''
 import smtplib,os,time
 from email.mime.text import MIMEText
-
+from email.mime.multipart import MIMEMultipart
 from common.readConfig_1 import ReadConfig
 from readConfig_1 import ReadConfig
 from email.header import *
@@ -25,10 +25,25 @@ class configMyEmail():
 
 
     #邮件内容
-    msg = MIMEText(_text=content,_subtype='plain',_charset='utf-8')
-    msg['From'] = sender
-    msg['To'] = receiver
-    msg['subject'] = Header(subject,'utf-8')
+    # msg = MIMEText(_text="gooosgg",_subtype='plain',_charset='utf-8')
+    # msg['From'] = sender
+    # msg['To'] = receiver
+    # msg['subject'] = Header(subject,'utf-8')
+    # print(subject)
+
+    # def send_html(self):
+    msg = MIMEMultipart()
+    msg['from'] = sender
+    msg['to'] = receiver
+    msg['subject'] = Header(subject, 'utf-8')
+    msg.attach(MIMEText(content, 'plain', 'utf-8'))
+
+    att1 = MIMEText(open('D:/interfaceTest/report_1/2019-06-02-18_50_46.html', 'rb').read(), 'base64', 'utf-8')
+    att1['Content-Type'] = 'application/octet-stream'
+    att1.add_header('Content-Disposition', 'attachment', filename=('gbk', '', "倩倩.html"))
+    msg.attach(att1)
+
+
 
     def send_email(self):
         try:

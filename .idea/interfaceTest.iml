@@ -13,6 +13,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/report" />
+        <option value="$MODULE_DIR$/common" />
       </list>
     </option>
   </component>
