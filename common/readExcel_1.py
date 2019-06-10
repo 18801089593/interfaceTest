@@ -60,8 +60,8 @@ class readExcel():
             dataList.append((singleList))
 
 
-        print(dataList)
+        #print(dataList)
         return dataList
 
-read = readExcel()
-read.getData()
+# read = readExcel()
+# print(read.getData())

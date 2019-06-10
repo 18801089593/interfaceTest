@@ -37,4 +37,4 @@ class ReadConfig(object):
         return value
 
 a = ReadConfig()
-print(a.get_email('content'))
+#print(a.get_email('content'))

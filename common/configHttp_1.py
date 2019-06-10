@@ -12,10 +12,12 @@ class ConfigHttp(object):
     #定义get方法
     def get(self,url,param):
         try:
-            print(url,param)
             response = requests.get(url, params=eval(param))
+            #print(response.json)
             result = response.text
+            newresult=response.status_code
             #获取实际结果，进行断言
+            #return result
             return result
         except Exception:
             print("request error,please check out!")
@@ -27,7 +29,6 @@ class ConfigHttp(object):
         try:
             response = requests.post(url, data=eval(param))
             result = response.text
-            print(result)
             return result
         except Exception:
             print("request error,please check out!")

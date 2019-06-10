@@ -1,11 +1,10 @@
 import requests
-# from common.readExcel import readExcel
+from common.readExcel_1 import readExcel
 
 
 class A():
 
     def num(self, param=None):
-        a = [['1', 'http://www.wanandroid.com/user/login', 'login', 'post', "{'username':'liangchao','password':'123456'}", '0'], ['2', 'http://www.wanandroid.com/user/register', 'register', 'post', "{'username':'liangchao03','password':'123456','repassword':'123456'}", '0'], ['3', 'http://www.wanandroid.com/user/logout/json', 'logout', 'get', "{'username':'liangchao'}", '0']]
 
         for i in a:
             print(i)

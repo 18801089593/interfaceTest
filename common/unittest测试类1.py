@@ -42,7 +42,7 @@ if __name__ =='__main__':
     #手工添加：1.实例化测试套件类
     suite = unittest.TestSuite()
     #2.调用addTest方法
-    suite.addTest(Mytest('test_sum1'))
+    suite.addTest(Mytest('test_sum3'))
     runner = unittest.TextTestRunner()
     runner.run(suite)
 
