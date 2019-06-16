@@ -63,5 +63,7 @@ class readExcel():
         #print(dataList)
         return dataList
 
-# read = readExcel()
-# print(read.getData())
+read = readExcel()
+print(read.getData())
+
+

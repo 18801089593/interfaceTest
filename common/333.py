@@ -6,7 +6,7 @@ b = ['a','b','c']
 c = ['4','5','6']
 #
 # # print(list(zip(a,b,c)))
-d = (list(zip(a,b,c)))
+d = list(zip(a,b,c))
 print('dddd',d)
 #
 # #第一种方法

@@ -19,7 +19,7 @@ class A():
             else:
                 print('请求失败')
 
-A().num()
+
 
 
 
